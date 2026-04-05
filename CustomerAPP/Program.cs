@@ -1,17 +1,45 @@
+using CustomerAPP.Presenters;
+using CustomerAPP.Service.Navigation;
+using CustomerAPP.Views.Main;
+using Microsoft.Extensions.DependencyInjection;
+
 namespace CustomerAPP
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
+        
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new MainForm());
+            var services = new ServiceCollection();
+
+            ConfigureServices(services);
+
+            using (ServiceProvider provider = services.BuildServiceProvider())
+            {
+                ApplicationConfiguration.Initialize();
+
+                var mainContainer = provider.GetRequiredService<MainForm>();
+                provider.GetRequiredService<MainPresenter>();
+
+                Application.Run(mainContainer);
+            }
+
+        }
+
+        private static void ConfigureServices(IServiceCollection services)
+        {
+            //Main Container
+            services.AddSingleton<MainForm>();
+
+            //Presenters
+            services.AddTransient<MainPresenter>();
+
+            //Navigation
+            services.AddSingleton<INavigationService, NavigationService>();
+
+            //Interfaces
+            services.AddTransient<IMainView>(sp => sp.GetRequiredService<MainForm>());
         }
     }
 }
