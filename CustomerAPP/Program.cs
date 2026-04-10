@@ -1,6 +1,7 @@
 using CustomerAPP.Presenters;
 using CustomerAPP.Service.Navigation;
 using CustomerAPP.Views.Main;
+using CustomerAPP.Views.Register;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CustomerAPP
@@ -31,9 +32,11 @@ namespace CustomerAPP
         {
             //Main Container
             services.AddSingleton<MainForm>();
+            services.AddScoped<RegisterCustomerForm>();
 
             //Presenters
             services.AddTransient<MainPresenter>();
+            services.AddScoped<RegisterCustomerPresenter>();
 
             //Navigation
             services.AddSingleton<INavigationService, NavigationService>();
