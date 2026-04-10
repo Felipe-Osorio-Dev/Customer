@@ -1,5 +1,6 @@
 ﻿using CustomerAPP.Service.Navigation;
 using CustomerAPP.Views.Main;
+using CustomerAPP.Views.Register;
 
 namespace CustomerAPP.Presenters
 {
@@ -13,12 +14,13 @@ namespace CustomerAPP.Presenters
             _navigationService = navigationService;
             _mainView = mainView;
 
+            _navigationService.SetMdiParent((Form)_mainView);
             _mainView.ClickCustomerRegister += OnClickCustomerRegister;
         }
 
         private void OnClickCustomerRegister(object sender, EventArgs e)
         {
-            MessageBox.Show("TESTANDO");
+            _navigationService.NavigateTo<RegisterCustomerForm, RegisterCustomerPresenter>();
         }
     }
 }
