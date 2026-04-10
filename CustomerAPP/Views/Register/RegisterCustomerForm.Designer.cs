@@ -1,6 +1,6 @@
 ﻿namespace CustomerAPP.Views.Register
 {
-    partial class RegisterCustomer
+    partial class RegisterCustomerForm
     {
         /// <summary>
         /// Required designer variable.

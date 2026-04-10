@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CustomerAPP.Views.Register
 {
-    public partial class RegisterCustomer : Form
+    public partial class RegisterCustomerForm : Form
     {
-        public RegisterCustomer()
+        public RegisterCustomerForm()
         {
             InitializeComponent();
         }
