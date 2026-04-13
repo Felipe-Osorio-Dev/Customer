@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtCustomerName = new TextBox();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            comboBox1 = new ComboBox();
+            txtState = new TextBox();
+            txtPhone = new TextBox();
+            txtEmail = new TextBox();
+            txtZipCode = new TextBox();
+            txtDocNumber = new TextBox();
+            cbbDocument = new ComboBox();
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
-            textBox7 = new TextBox();
+            txtCity = new TextBox();
             label11 = new Label();
             label12 = new Label();
             label13 = new Label();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            button1 = new Button();
+            txtNeighborhood = new TextBox();
+            txtHouseNumber = new TextBox();
+            txtStreet = new TextBox();
+            btnRegister = new Button();
             SuspendLayout();
             // 
             // label1
@@ -66,12 +66,12 @@
             label1.TabIndex = 0;
             label1.Text = "Cliente";
             // 
-            // textBox1
+            // txtCustomerName
             // 
-            textBox1.Location = new Point(12, 84);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(205, 23);
-            textBox1.TabIndex = 1;
+            txtCustomerName.Location = new Point(12, 84);
+            txtCustomerName.Name = "txtCustomerName";
+            txtCustomerName.Size = new Size(205, 23);
+            txtCustomerName.TabIndex = 1;
             // 
             // label2
             // 
@@ -124,9 +124,9 @@
             label6.Font = new Font("Segoe UI", 12F);
             label6.Location = new Point(474, 60);
             label6.Name = "label6";
-            label6.Size = new Size(65, 21);
+            label6.Size = new Size(95, 21);
             label6.TabIndex = 6;
-            label6.Text = "Contato";
+            label6.Text = "Telefone/Cel";
             // 
             // label7
             // 
@@ -139,49 +139,49 @@
             label7.TabIndex = 7;
             label7.Text = "Email";
             // 
-            // textBox2
+            // txtState
             // 
-            textBox2.Location = new Point(244, 294);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(205, 23);
-            textBox2.TabIndex = 8;
+            txtState.Location = new Point(244, 294);
+            txtState.Name = "txtState";
+            txtState.Size = new Size(205, 23);
+            txtState.TabIndex = 8;
             // 
-            // textBox3
+            // txtPhone
             // 
-            textBox3.Location = new Point(474, 84);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(205, 23);
-            textBox3.TabIndex = 9;
+            txtPhone.Location = new Point(474, 84);
+            txtPhone.Name = "txtPhone";
+            txtPhone.Size = new Size(205, 23);
+            txtPhone.TabIndex = 9;
             // 
-            // textBox4
+            // txtEmail
             // 
-            textBox4.Location = new Point(244, 84);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(205, 23);
-            textBox4.TabIndex = 10;
+            txtEmail.Location = new Point(244, 84);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(205, 23);
+            txtEmail.TabIndex = 10;
             // 
-            // textBox5
+            // txtZipCode
             // 
-            textBox5.Location = new Point(12, 294);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(205, 23);
-            textBox5.TabIndex = 11;
+            txtZipCode.Location = new Point(12, 294);
+            txtZipCode.Name = "txtZipCode";
+            txtZipCode.Size = new Size(205, 23);
+            txtZipCode.TabIndex = 11;
             // 
-            // textBox6
+            // txtDocNumber
             // 
-            textBox6.Location = new Point(244, 153);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(205, 23);
-            textBox6.TabIndex = 12;
+            txtDocNumber.Location = new Point(244, 153);
+            txtDocNumber.Name = "txtDocNumber";
+            txtDocNumber.Size = new Size(205, 23);
+            txtDocNumber.TabIndex = 12;
             // 
-            // comboBox1
+            // cbbDocument
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "CPF", "CNPJ" });
-            comboBox1.Location = new Point(12, 153);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(205, 23);
-            comboBox1.TabIndex = 13;
+            cbbDocument.FormattingEnabled = true;
+            cbbDocument.Items.AddRange(new object[] { "CPF", "CNPJ" });
+            cbbDocument.Location = new Point(12, 153);
+            cbbDocument.Name = "cbbDocument";
+            cbbDocument.Size = new Size(205, 23);
+            cbbDocument.TabIndex = 13;
             // 
             // label8
             // 
@@ -216,12 +216,12 @@
             label10.TabIndex = 16;
             label10.Text = "Cidade";
             // 
-            // textBox7
+            // txtCity
             // 
-            textBox7.Location = new Point(474, 294);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(205, 23);
-            textBox7.TabIndex = 17;
+            txtCity.Location = new Point(474, 294);
+            txtCity.Name = "txtCity";
+            txtCity.Size = new Size(205, 23);
+            txtCity.TabIndex = 17;
             // 
             // label11
             // 
@@ -256,67 +256,68 @@
             label13.TabIndex = 20;
             label13.Text = "Rua";
             // 
-            // textBox8
+            // txtNeighborhood
             // 
-            textBox8.Location = new Point(12, 367);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(205, 23);
-            textBox8.TabIndex = 21;
+            txtNeighborhood.Location = new Point(12, 367);
+            txtNeighborhood.Name = "txtNeighborhood";
+            txtNeighborhood.Size = new Size(205, 23);
+            txtNeighborhood.TabIndex = 21;
             // 
-            // textBox9
+            // txtHouseNumber
             // 
-            textBox9.Location = new Point(474, 367);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(205, 23);
-            textBox9.TabIndex = 22;
+            txtHouseNumber.Location = new Point(474, 367);
+            txtHouseNumber.Name = "txtHouseNumber";
+            txtHouseNumber.Size = new Size(205, 23);
+            txtHouseNumber.TabIndex = 22;
             // 
-            // textBox10
+            // txtStreet
             // 
-            textBox10.Location = new Point(244, 367);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(205, 23);
-            textBox10.TabIndex = 23;
+            txtStreet.Location = new Point(244, 367);
+            txtStreet.Name = "txtStreet";
+            txtStreet.Size = new Size(205, 23);
+            txtStreet.TabIndex = 23;
             // 
-            // button1
+            // btnRegister
             // 
-            button1.Location = new Point(605, 470);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 24;
-            button1.Text = "Cadastrar";
-            button1.UseVisualStyleBackColor = true;
+            btnRegister.Location = new Point(605, 470);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(75, 23);
+            btnRegister.TabIndex = 24;
+            btnRegister.Text = "Cadastrar";
+            btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.Click += btnRegister_Click;
             // 
-            // RegisterCustomer
+            // RegisterCustomerForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(692, 505);
-            Controls.Add(button1);
-            Controls.Add(textBox10);
-            Controls.Add(textBox9);
-            Controls.Add(textBox8);
+            Controls.Add(btnRegister);
+            Controls.Add(txtStreet);
+            Controls.Add(txtHouseNumber);
+            Controls.Add(txtNeighborhood);
             Controls.Add(label13);
             Controls.Add(label12);
             Controls.Add(label11);
-            Controls.Add(textBox7);
+            Controls.Add(txtCity);
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
+            Controls.Add(cbbDocument);
+            Controls.Add(txtDocNumber);
+            Controls.Add(txtZipCode);
+            Controls.Add(txtEmail);
+            Controls.Add(txtPhone);
+            Controls.Add(txtState);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtCustomerName);
             Controls.Add(label1);
-            Name = "RegisterCustomer";
+            Name = "RegisterCustomerForm";
             Text = "Cadastro de Cliente";
             ResumeLayout(false);
             PerformLayout();
@@ -325,29 +326,29 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtCustomerName;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private ComboBox comboBox1;
+        private TextBox txtState;
+        private TextBox txtPhone;
+        private TextBox txtEmail;
+        private TextBox txtZipCode;
+        private TextBox txtDocNumber;
+        private ComboBox cbbDocument;
         private Label label8;
         private Label label9;
         private Label label10;
-        private TextBox textBox7;
+        private TextBox txtCity;
         private Label label11;
         private Label label12;
         private Label label13;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private Button button1;
+        private TextBox txtNeighborhood;
+        private TextBox txtHouseNumber;
+        private TextBox txtStreet;
+        private Button btnRegister;
     }
 }
