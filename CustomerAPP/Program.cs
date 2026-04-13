@@ -43,6 +43,7 @@ namespace CustomerAPP
 
             //Interfaces
             services.AddTransient<IMainView>(sp => sp.GetRequiredService<MainForm>());
+            services.AddTransient<IRegisterCustomerView>(sp => sp.GetRequiredService<RegisterCustomerForm>());
         }
     }
 }
