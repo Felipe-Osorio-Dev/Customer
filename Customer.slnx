@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="CustomerAPI/CustomerAPI.csproj" Id="26259410-7e0d-4b57-92c6-2f43fad7b337" />
   <Project Path="CustomerAPP/CustomerAPP.csproj" />
 </Solution>
